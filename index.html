@@ -1,34 +1,105 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Login Page with Bootstrap 5</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-6 bg-img vh-100">
-                Bölüm 1
+      <div class="row">
+        <div class="col-md-6 bg-img vh-100 mb-5 mb-md-0"></div>
+        <div class="col-md-6 d-flex justify-content-center align-items-center py-5">
+          <div class="w-75">
+            <h3>Log in to LoginPage.</h3>
+            <p class="mb-5">
+              Welcome back! Login with your data that you entered during
+              registration.
+            </p>
+
+            <div class="d-grid gap-3">
+              <a href="#" class="btn btn-light bg-white py-3 shadow-sm"
+                ><i class="bi bi-google me-3"></i> Log in with Google</a
+              >
+              <a href="#" class="btn btn-light bg-white py-3 shadow-sm">
+                <i class="bi bi-facebook me-3"></i> Log in with Facebook</a
+              >
             </div>
-            <div class="col-md-6 bg-light">Bölüm 2</div>
+
+            <hr class="my-5" />
+
+            <form action="">
+              <div class="d-flex bg-light mb-2 rounded-3">
+                <div class="flex-shrink-1 ps-3 align-self-center"><i class="bi bi-envelope-open-fill fs-4 me-3"></i></div>
+                <div class="form-floating flex-grow-1">
+                  <input
+                    type="email"
+                    class="form-control border-0 bg-light"
+                    id="email"
+                    placeholder="name@example.com"
+                  />
+                  <label for="email">Email address</label>
+                </div>
+              </div>
+
+              <div class="d-flex bg-light mb-2 rounded-3">
+                <div class="flex-shrink-1 ps-3 align-self-center"><i class="bi bi-key-fill fs-4 me-3"></i></div>
+                <div class="form-floating flex-grow-1">
+                  <input
+                    type="password"
+                    class="form-control border-0 bg-light"
+                    id="pass"
+                    placeholder="*******"
+                  />
+                  <label for="pass">Password</label>
+                </div>
+              </div>
+
+              <div class="form-check float-start">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  value=""
+                  id="flexCheckDefault"
+                />
+                <label class="form-check-label" for="flexCheckDefault">
+                  Remember Me
+                </label>
+              </div>
+              <a href="#" class="float-end link-dark">Forgot your password?</a>
+              <div class="clearfix mb-4"></div>
+
+              <input
+                type="submit"
+                class="btn btn-warning w-100 py-3 mb-3"
+                value="SUBMIT"
+              />
+
+              <p class="text-center">
+                Don't have an account?<a href="#" class="link-warning"> Register</a>
+              </p>
+            </form>
+          </div>
         </div>
+      </div>
     </div>
 
-
-
-
-
-
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
